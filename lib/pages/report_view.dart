@@ -1,3 +1,4 @@
+import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:medical_appointment/pages/utils.dart/colors.dart';
 import 'package:medical_appointment/pages/widgets/report_card.dart';
@@ -35,7 +36,7 @@ class ReportView extends StatelessWidget {
                       ],
                     ),
                     ReportCard(
-                      color: lightBlue,
+                      color: Colors.greenAccent[200]!,
                     ),
                   ],
                 ),
@@ -49,10 +50,10 @@ class ReportView extends StatelessWidget {
                     Expanded(
                       flex: 1,
                       child: SmallaReportCardWidget(
-                        color: Colors.pink,
+                        color: Colors.pink[200]!,
                         mainText: 'A+',
                         text: 'Tipo sanguíneo',
-                        icon: Icon(Icons.heart_broken, color: white,),
+                        icon: Icon(EvaIcons.heart,),
                       ),
                     ),
                     SizedBox(
@@ -62,9 +63,9 @@ class ReportView extends StatelessWidget {
                       flex: 1,
                       child: SmallaReportCardWidget(
                         color: lightPurple,
-                        mainText: '80kg',
+                        mainText: '58kg',
                         text: 'Peso',
-                        icon: Icon(Icons.person, color: white,),
+                        icon: Icon(Icons.person,),
                       ),
                     )
                   ],
@@ -80,7 +81,7 @@ class ReportView extends StatelessWidget {
                     Expanded(
                       flex: 1,
                       child: Align(
-                        alignment: Alignment.centerLeft,
+                        alignment: Alignment.bottomLeft,
                         child: Text(
                           'Ultimos exames',
                           style: TextStyle(
@@ -96,18 +97,21 @@ class ReportView extends StatelessWidget {
                             color: lightPurple,
                             text: 'Exames',
                             icon: Icon(Icons.assignment_late_outlined),
+                            files: '7',
                           ),
                           SizedBox(height: 5,),
                           ReportListCard(
                             icon: Icon(Icons.assignment_outlined),
                             color: purple,
                             text: 'Receitas Médicas',
+                            files: '4',
                           ),
                           SizedBox(height: 5,),
                           ReportListCard(
                             icon: Icon(Icons.assignment_add),
                             color: lightGreen,
                             text: 'Atestados',
+                            files: '0',
                           ),
                           SizedBox(height: 5,),
                         ],

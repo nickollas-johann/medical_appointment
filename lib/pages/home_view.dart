@@ -109,30 +109,45 @@ class HomeView extends StatelessWidget {
                   children: [
                     ServicesWidget(
                       color: lightGreen,
-                      icon: Icon(Icons.baby_changing_station,),
+                      icon: Icon(
+                        Icons.baby_changing_station,
+                        color: white,
+                        size: 35,
+                      ),
                     ),
                     SizedBox(
                       width: 8,
                     ),
                     ServicesWidget(
                       color: pink,
-                      icon: Icon(Icons.shelves)
+                      icon: Icon(
+                        Icons.pregnant_woman,
+                        color: white,
+                        size: 35,
+                      ),
                     ),
                     SizedBox(
                       width: 8,
                     ),
                     ServicesWidget(
                       color: purple,
-                      icon: Icon(Icons.shelves)
+                      icon: Icon(
+                        Icons.vaccines,
+                        color: white,
+                        size: 35,
+                      ),
                     ),
                     SizedBox(
                       width: 8,
                     ),
                     ServicesWidget(
                       color: lightPurple,
-                      icon: Icon(Icons.shelves)
+                      icon: Icon(
+                        Icons.sick,
+                        color: white,
+                        size: 35,
+                      ),
                     ),
-                    
                   ],
                 ),
               ],

@@ -8,7 +8,7 @@ class ReportCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 170,
-      padding: EdgeInsets.all(12),
+      padding: const EdgeInsets.all(12),
       decoration: ShapeDecoration(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(25),
@@ -28,10 +28,10 @@ class ReportCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      '95',
+                      '19,3',
                       style: TextStyle(fontSize: 50),
                     ),
-                    Text('bpm')
+                    Text('IMC')
                   ],
                 ),
               ],
@@ -44,7 +44,7 @@ class ReportCard extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(25),
                 ),
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: AssetImage('assets/PinClipart.com_clam-clipart-black-and_827667.png'),
                 ),
               ),

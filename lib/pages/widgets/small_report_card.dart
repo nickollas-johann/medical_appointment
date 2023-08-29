@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:medical_appointment/pages/utils.dart/colors.dart';
 
 class SmallaReportCardWidget extends StatelessWidget {
   final Color color;
@@ -10,12 +9,13 @@ class SmallaReportCardWidget extends StatelessWidget {
       {super.key,
       required this.color,
       required this.mainText,
-      required this.text, required this.icon});
+      required this.text,
+      required this.icon});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(12),
+      padding: const EdgeInsets.all(12),
       decoration: ShapeDecoration(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(25),
@@ -27,10 +27,14 @@ class SmallaReportCardWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           icon,
-          Text(text, style: TextStyle(color: white),),
+          Text(
+            text,
+          ),
           Text(
             mainText,
-            style: TextStyle(fontSize:40, color: white),
+            style: TextStyle(
+              fontSize: 40,
+            ),
           ),
         ],
       ),

@@ -28,7 +28,7 @@ class _HomeViewNavigationState extends State<HomeViewNavigation> {
           NavigationDestination(
               icon: Icon(Icons.calendar_month), label: 'Agenda'),
           NavigationDestination(
-              icon: Icon(Icons.analytics), label: 'Resumo'),
+              icon: Icon(Icons.summarize), label: 'Resumo'),
           NavigationDestination(
               icon: Icon(Icons.notifications), label: 'Notificações')
         ],
